@@ -9,3 +9,6 @@ function[p] = fffff(f,endpoint_a,endpoint_b,TOL,maxIter)
     %TOL is the Tolerance
     %maxIter-short for max iterations
     %output it p; which is an approximate solution
+
+%step 1 i = 1
+%FA = f(a)
