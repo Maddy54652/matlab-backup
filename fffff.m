@@ -22,16 +22,16 @@ FA = f(endpoint_a);
         p = p/2;
         p = p+endpoint_a;
         FP = f(p);
-        %print(FP);
     
         %step 4
         dif = endpoint_b-endpoint_a;
         dif = dif / 2;
-        print(dif);
+        disp(dif);
             if (or(FP == 0,dif < TOL))
             %Print P
-            print(p);
+            disp(p);
             %end program
+            quit;
             end
     
         %step 5 
@@ -50,5 +50,6 @@ FA = f(endpoint_a);
     
 %step 7
 %print to let the user know that it failed
+disp('Sometimes things were not meant to be...');
 
 end
