@@ -28,7 +28,7 @@ FA = f(endpoint_a);
         dif = endpoint_b-endpoint_a;
         dif = dif / 2;
         print(dif);
-            if (FP == 0 || dif < TOL)
+            if (or(FP == 0,dif < TOL))
             %Print P
             print(p);
             %end program
