@@ -12,7 +12,7 @@ function[p] = fffff(f,endpoint_a,endpoint_b,TOL,maxIter)
 
 %step 1 
 i = 1;
-%FA = f(a)
+FA = f(endpoint_a);
 
 %step 2
     while i <= maxIter
@@ -28,17 +28,20 @@ i = 1;
         dif = b-a;
         dif = dif / 2;
         print(dif);
-            %if (FP == 0 || dif < TOL)
+            if (FP == 0 || dif < TOL)
             %Print P
+            print(p);
             %end program
+            end
     
         %step 5 
         i = i+1;
     
         %Step 6
-            %if FA * FP > 0
+            if (FA*FP) > 0
                 %a = p
              %compute a_i and b_i
+            end
             %else
                 %b = p
              %FA is unchanged
