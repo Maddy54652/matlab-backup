@@ -25,7 +25,7 @@ FA = f(endpoint_a);
         print(FP);
     
         %step 4
-        dif = b-a;
+        dif = endpoint_b-endpoint_a;
         dif = dif / 2;
         print(dif);
             if (FP == 0 || dif < TOL)
@@ -39,12 +39,13 @@ FA = f(endpoint_a);
     
         %Step 6
             if (FA*FP) > 0
-                %a = p
+                endpoint_a = p;
              %compute a_i and b_i
-            end
-            %else
-                %b = p
+       
+            else
+                endpoint_b = p;
              %FA is unchanged
+            end
     end    
     
 %step 7
