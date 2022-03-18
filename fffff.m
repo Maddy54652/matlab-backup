@@ -10,9 +10,6 @@ function[p] = fffff(f,endpoint_a,endpoint_b,TOL,maxIter)
     %maxIter-short for max iterations
     %output it p; which is an approximate solution
 
-%insert function here
-f = x
-
 %step 1 
 i = 1;
 %FA = f(a)
