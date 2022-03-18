@@ -22,7 +22,7 @@ FA = f(endpoint_a);
         p = p/2;
         p = p+endpoint_a;
         FP = f(p);
-        print(FP);
+        %print(FP);
     
         %step 4
         dif = endpoint_b-endpoint_a;
