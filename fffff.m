@@ -11,7 +11,7 @@ function[p] = fffff(f,endpoint_a,endpoint_b,TOL,maxIter)
     %output it p; which is an approximate solution
 
 %insert function here
-%f = ???????
+f = x
 
 %step 1 
 i = 1;
@@ -21,28 +21,30 @@ i = 1;
     while i <= maxIter
     %do steps 3-6
         %step 3
-        %p = endpoint_b-endpoint_a
-        %p = p/2
-        %p = p+endpoint_a
-         %FP = f(p)
+        p = endpoint_b-endpoint_a;
+        p = p/2;
+        p = p+endpoint_a;
+        FP = f(p);
+        print(FP);
     
         %step 4
-        %dif = b-a
-        %dif = dif / 2
-        %if (FP == 0 || dif < TOL)
-        %Print P
-        %end program
+        dif = b-a;
+        dif = dif / 2;
+        print(dif);
+            %if (FP == 0 || dif < TOL)
+            %Print P
+            %end program
     
         %step 5 
         i = i+1;
     
         %Step 6
-        %if FA * FP > 0
-        %a = p
-        %compute a_i and b_i
-        %else
-        %b = p
-        %FA is unchanged
+            %if FA * FP > 0
+                %a = p
+             %compute a_i and b_i
+            %else
+                %b = p
+             %FA is unchanged
     end    
     
 %step 7
