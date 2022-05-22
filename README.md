@@ -1,3 +1,3 @@
-# matlab-backup
+# matlab-stuff
 
-Hello I'm using this as a place to show off my mathworks stuff. :D
+Hello this is my Matlab Stuff :D
